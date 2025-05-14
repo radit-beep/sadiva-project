@@ -16,7 +16,7 @@ return new class extends Migration
         $table->string('name');
         $table->string('email')->unique();
         $table->string('password');
-        $table->date('date_of_birth')->nullable(); // kalau kamu sudah mau langsung tambahkan
+        $table->date('date_of_birth')->nullable();
         $table->rememberToken();
         $table->timestamps();
     });

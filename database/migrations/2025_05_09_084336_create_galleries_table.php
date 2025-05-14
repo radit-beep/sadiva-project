@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('galleries', function (Blueprint $table) {
         $table->id();
         $table->string('title');
-        $table->string('image_url'); // URL gambar atau path file
+        $table->string('image_url');
         $table->text('description')->nullable();
         $table->timestamps();
     });
