@@ -8,9 +8,10 @@
 
 
         <nav class="hidden md:flex gap-10 text-gray-500 text-md">
-            <a href="{{ route('produk') }}" class="hover:text-black">Produk</a>
+            <a href="{{ route('home') }}" class="hover:text-black">Home</a>
+            <a href="{{ route('product') }}" class="hover:text-black">Produk</a>
             <a href="{{ route('jasa') }}" class="hover:text-black">Jasa</a>
-            <a href="{{ route('komunitas') }}" class="hover:text-black">Komunitas</a>
+            <a href="{{ route('community') }}" class="hover:text-black">Komunitas</a>
         </nav>
 
 

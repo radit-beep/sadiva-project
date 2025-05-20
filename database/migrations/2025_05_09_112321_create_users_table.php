@@ -15,6 +15,7 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->string('email')->unique();
+        $table->timestamp('email_verified_at')->nullable();
         $table->string('password');
         $table->date('date_of_birth')->nullable();
         $table->rememberToken();
@@ -27,6 +28,7 @@ public function down(): void
 {
     Schema::table('users', function (Blueprint $table) {
         $table->dropColumn('date_of_birth');
+        $table->dropColumn('email_verified_at');
     });
 }
 

@@ -21,30 +21,38 @@ class ProductResource extends Resource
     protected static ?string $pluralLabel = 'Produk';
 
     public static function form(Form $form): Form
-{
-    return $form->schema([
-        Select::make('category_id')
-            ->label('Kategori')
-            ->relationship('category', 'name') // relasi ke model Category
-            ->required(),
+    {
+        return $form->schema([
+            Select::make('category_id')
+                ->label('Kategori')
+                ->relationship('category', 'name') // relasi ke model Category
+                ->required(),
 
-        TextInput::make('name')
-            ->label('Nama Produk')
-            ->required()
-            ->maxLength(255),
+            TextInput::make('name')
+                ->label('Nama Produk')
+                ->required()
+                ->maxLength(255),
 
-        Textarea::make('description')
-            ->label('Deskripsi')
-            ->rows(5),
+            Textarea::make('description')
+                ->label('Deskripsi')
+                ->rows(5),
 
-        FileUpload::make('image_url')
-            ->label('Gambar')
-            ->image()
-            ->directory('produk')
-            ->imagePreviewHeight('200')
-            ->required(),
-    ]);
-}
+            FileUpload::make('image_url')
+                ->label('Gambar')
+                ->image()
+                ->directory('produk')
+                ->imagePreviewHeight('200')
+                ->required(),
+            
+            TextInput::make('price')
+                ->label('Harga')
+                ->numeric()
+                ->required()
+                ->suffix('Rp')
+                ->inputMode('decimal'),
+        
+        ]);
+    }
 
 public static function table(Table $table): Table
 {
@@ -62,10 +70,14 @@ public static function table(Table $table): Table
             ->label('Kategori')
             ->sortable()
             ->searchable(),
+
+        TextColumn::make('price')
+            ->label('Harga')
+            ->sortable()
+            ->searchable(),
     ])
     ->defaultSort('name');
 }
-
 
     public static function getPages(): array
     {
