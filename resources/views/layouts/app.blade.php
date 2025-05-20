@@ -26,5 +26,12 @@
     @vite('resources/js/app.js')
 
     @stack('scripts')
+     <!-- Icon Whatsapp -->
+    <div class="fixed bottom-12 right-6 z-50">
+        <a href="https://wa.me/6281234567890" target="_blank" class="bg-white hover:bg-gray-100 rounded-full shadow-lg w-16 h-16 flex items-center justify-center text-4xl transition">
+            <i class="fa-brands fa-whatsapp text-green-500"></i>
+        </a>
+    </div>
+
 </body>
 </html>
