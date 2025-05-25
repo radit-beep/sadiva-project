@@ -12,6 +12,7 @@
             <a href="{{ route('product') }}" class="hover:text-black">Produk</a>
             <a href="{{ route('jasa') }}" class="hover:text-black">Jasa</a>
             <a href="{{ route('community') }}" class="hover:text-black">Komunitas</a>
+            <a href="{{ route('about') }}" class="hover:text-black">About Us</a>
         </nav>
 
 

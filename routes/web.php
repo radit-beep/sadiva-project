@@ -5,12 +5,19 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CommunityController;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+use App\Models\Review;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::view('/', 'pages.home')->name('home');
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $reviews = Review::latest()->take(9)->get(); // ambil data review
+    return view('pages.home', compact('reviews'));
+})->name('home');
 
-Route::view('/', 'pages.home')->name('home');
 Route::view('/jasa', 'pages.jasa')->name('jasa');
 
 Route::get('/community', [CommunityController::class, 'index'])->name('community');
@@ -28,6 +35,11 @@ Route::get('/product/{id}', function ($id) {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/about', function () {
+    return view('pages/aboutUs');
+})->name('about');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
