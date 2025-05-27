@@ -7,7 +7,7 @@
         <h1 class="text-3xl font-bold mb-4">{{ $product->name }}</h1>
 
         @if ($product->image_url)
-        <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->name }}" class="w-full h-48 object-cover mb-3 rounded">
+        <img src="{{ asset('storage/' . $product->image_url) }}" alt="{{ $product->name }}" class="w-full h-48 object-contain mb-3 rounded">
         @endif
 
         <p class="text-gray-700 text-lg">{{ $product->description }}</p>

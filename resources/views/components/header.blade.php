@@ -7,7 +7,7 @@
         </div>
 
 
-        <nav class="hidden md:flex gap-10 text-gray-500 text-md">
+        <nav class="md:flex gap-10 text-gray-500 text-md">
             <a href="{{ route('home') }}" class="hover:text-black">Home</a>
             <a href="{{ route('product') }}" class="hover:text-black">Produk</a>
             <a href="{{ route('jasa') }}" class="hover:text-black">Jasa</a>
@@ -16,7 +16,7 @@
 
 
         <div>
-            <a href="{{ route('login') }}" class="px-4 py-2 bg-black text-white rounded-md hover:opacity-80 transition">
+            <a href="{{ route('filament.admin.auth.login') }}" class="px-4 py-2 bg-black text-white rounded-md hover:opacity-80 transition">
                 Sign In
             </a>
         </div>
