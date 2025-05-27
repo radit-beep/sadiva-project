@@ -4,13 +4,13 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CommunityController;
 use App\Models\Product;
-use Livewire\Livewire;
-use App\Filament\Pages\ResetPassword;
+use App\Models\Review;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $reviews = Review::latest()->take(9)->get(); // ambil data review
+    return view('pages.home', compact('reviews'));
+})->name('home');
 
 Route::view('/jasa', 'pages.jasa')->name('jasa');
 
@@ -33,7 +33,6 @@ Route::get('/dashboard', function () {
 Route::get('/about', function () {
     return view('pages/aboutUs');
 })->name('about');
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
