@@ -1,4 +1,4 @@
-<header class="w-full bg-white shadow-sm" x-data="{ mobileMenuOpen: false }">
+<header class="w-full bg-white shadow-sm fixed top-0 left-0 right-0 z-50" x-data="{ mobileMenuOpen: false }">
     <div class="max-w-7xl mx-auto px-6 py-4">
         <!-- Desktop Layout -->
         <div class="hidden md:flex justify-between items-center">
@@ -46,3 +46,6 @@
         </div>
     </div>
 </header>
+
+<div class="pt-20">
+</div>

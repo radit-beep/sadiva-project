@@ -54,7 +54,6 @@
                     </div>
                 </div>
                 
-                <!-- Filter Buttons -->
                 <div class="flex flex-wrap gap-3">
                     <button class="px-4 py-2 bg-emerald-600 text-white rounded-full text-sm font-medium hover:bg-emerald-700 transition-colors duration-300 shadow-sm">
                         Semua Produk
@@ -68,7 +67,6 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         @forelse ($products as $product)
             <a href="{{ route('product.detail', $product->id) }}" class="group block bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2">
-                <!-- Image Container -->
                 <div class="relative overflow-hidden">
                     @if($product->image_url)
                         <img src="{{ asset('storage/' . $product->image_url) }}" 
@@ -83,12 +81,10 @@
                         </div>
                     @endif
                     
-                    <!-- Product Badge -->
                     <div class="absolute top-4 left-4 bg-emerald-500 text-white rounded-full px-3 py-1 text-xs font-semibold shadow-lg">
                         Segar
                     </div>
                     
-                    <!-- Quick Action -->
                     <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <button class="w-10 h-10 bg-white bg-opacity-90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300 shadow-lg">
                             <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +117,6 @@
                         </div>
                     </div>
                     
-                    <!-- Action Area -->
                     <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                         <div class="flex items-center space-x-2">
                             <div class="flex items-center space-x-1">
@@ -144,7 +139,6 @@
                 </div>
             </a>
         @empty
-            <!-- Empty State -->
             <div class="col-span-full flex flex-col items-center justify-center py-20">
                 <div class="w-32 h-32 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-8 relative">
                     <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -220,7 +214,6 @@
         animation: float 2s ease-in-out infinite;
     }
     
-    /* Custom scrollbar for better UX */
     ::-webkit-scrollbar {
         width: 8px;
     }
