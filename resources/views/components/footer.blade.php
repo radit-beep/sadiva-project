@@ -69,7 +69,7 @@
 
         <!-- Copyright Section -->
         <div class="border-t mt-8 pt-6 text-center text-sm text-gray-600">
-            <p>&copy; 2024 Logo. All rights reserved.</p>
+            <p>&copy; Ilmu Komputer IPB University.</p>
         </div>
     </div>
 </footer>
