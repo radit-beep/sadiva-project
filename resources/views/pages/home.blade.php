@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Banner Gambar Lebar Penuh -->
-    <section>
+    <section class="w-screen relative left-1/2 right-1/2 -mx-[50vw]">
         <img src="{{ asset('images/sadifa farm.jpg') }}" alt="Banner Image" class="w-full h-auto object-cover">
     </section>
 
