@@ -26,7 +26,7 @@
     </section>
 
     <!-- Welcome Section -->
-    <section class="py-[4rem] px-[1.5rem] md:px-[4rem] bg-white">
+    <section class="py-[4rem] px-[1.5rem] md:px-[4rem] bg-gradient-to-br from-green-50 to-emerald-50">
         <div class="max-w-5xl mx-auto text-center">
             <div class="mb-8">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

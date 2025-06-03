@@ -30,7 +30,6 @@
 <!-- Main Content -->
 <div class="bg-gradient-to-b from-gray-50 to-white">
     <div class="container mx-auto px-4 py-16">
-        <!-- Story Section -->
         <div class="max-w-4xl mx-auto mb-20">
             <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div class="space-y-6">
@@ -87,7 +86,6 @@
             </div>
         </div>
 
-        <!-- Vision, Mission, Motto Section -->
         <div class="grid lg:grid-cols-3 gap-8 mb-20">
             <!-- Visi -->
             <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-green-100">
@@ -149,7 +147,6 @@
             </div>
         </div>
 
-        <!-- CTA Section -->
         <div class="bg-gradient-to-r from-green-600 to-emerald-600 rounded-3xl p-12 text-center text-white shadow-2xl">
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Bergabunglah Bersama Kami</h2>
@@ -157,12 +154,12 @@
                     Kami terbuka untuk kerja sama, edukasi, maupun kunjungan. Sadifa Farm bukan sekadar tempat menanam, tapi juga tempat tumbuh—untuk semua yang mencintai alam dan masa depan yang lebih hijau.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://maps.app.goo.gl/KU86oENVCKLKDXWX6" target="_blank" rel="noopener" class="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        🌱 Kunjungi Kami
-                    </a>
-                    <a href="https://wa.me/628123456789" target="_blank" rel="noopener" class="bg-green-500 bg-opacity-30 backdrop-blur text-white px-8 py-4 rounded-xl font-semibold hover:bg-opacity-40 transition-all duration-300 border border-green-300 border-opacity-30">
-                        📞 Hubungi Kami
-                    </a>
+                    <button class="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg"> 
+                        <a href="https://maps.app.goo.gl/KU86oENVCKLKDXWX6" target="_blank" rel="noopener">🌱 Kunjungi Kami</a> 
+                    </button>
+                    <button class="bg-green-500 bg-opacity-30 backdrop-blur text-white px-8 py-4 rounded-xl font-semibold hover:bg-opacity-40 transition-all duration-300 border border-green-300 border-opacity-30">
+                        <a href="https://wa.me/628123456789" target="_blank" rel="noopener">📞 Hubungi Kami</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -198,7 +195,6 @@
 
 @push('scripts')
 <script>
-    // Smooth scrolling for back to top button
     document.addEventListener('DOMContentLoaded', function() {
         const backToTop = document.querySelector('.fixed.bottom-8.right-8');
         if (backToTop) {
@@ -210,7 +206,6 @@
             });
         }
         
-        // Show/hide back to top button based on scroll position
         window.addEventListener('scroll', function() {
             if (window.scrollY > 300) {
                 backToTop.style.opacity = '1';
