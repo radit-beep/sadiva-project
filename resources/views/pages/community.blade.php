@@ -125,9 +125,9 @@
             <p class="text-green-100 mb-6 max-w-2xl mx-auto">
                 Jadilah bagian dari komunitas mitra Sadifa Farm dan kembangkan bisnis pertanian Anda bersama kami.
             </p>
-            <button class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+            <a href="https://wa.me/628123456789" target="_blank" rel="noopener" class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
                 Bergabung Sekarang
-            </button>
+            </a>
         </div>
     @endif
 @endsection

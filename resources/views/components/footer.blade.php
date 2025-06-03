@@ -16,7 +16,7 @@
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
                         <div class="w-4 h-4 bg-white rounded-full"></div>
                     </div>
-                    <span class="text-2xl font-bold bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Kebun Sadiva</span>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Kebun Sadifa</span>
                 </div>
                 <p class="text-green-100 text-sm leading-relaxed mb-6">
                     Membangun ekosistem pertanian berkelanjutan melalui teknologi digital dan inovasi ramah lingkungan untuk kehidupan yang lebih hijau.
@@ -130,7 +130,7 @@
         <div class="border-t border-white/10 pt-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-green-200 text-sm text-center md:text-left">
-                    &copy; {{ date('Y') }} Kebun Sadiva - Ilmu Komputer IPB University. All rights reserved.
+                    &copy; {{ date('Y') }} Kebun Sadifa - Ilmu Komputer IPB University. All rights reserved.
                 </p>
                 <div class="flex gap-6 text-sm text-green-200">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>

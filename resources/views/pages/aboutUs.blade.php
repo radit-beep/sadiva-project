@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami - Sadiva Farm')
+@section('title', 'Tentang Kami - Sadifa Farm')
 
 @section('content')
 <!-- Hero Section -->
@@ -15,7 +15,7 @@
     <div class="relative container mx-auto px-4 py-20 md:py-32">
         <div class="text-center max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent leading-tight">
-                Tentang Sadiva Farm
+                Tentang Sadifa Farm
             </h1>
             <p class="text-xl md:text-2xl text-green-100 leading-relaxed max-w-3xl mx-auto">
                 Membangun masa depan pertanian organik berkelanjutan di jantung Institut Pertanian Bogor
@@ -38,7 +38,7 @@
                         🌱 Cerita Kami
                     </div>
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        Sadiva Farm adalah kebun organik yang terletak di lingkungan Institut Pertanian Bogor (IPB), didirikan dengan semangat untuk menghadirkan gaya hidup sehat dan berkelanjutan melalui produk-produk pertanian alami. Kami percaya bahwa alam adalah sumber kehidupan terbaik—dan dari sanalah kami memulai perjalanan ini.
+                        Sadifa Farm adalah kebun organik yang terletak di lingkungan Institut Pertanian Bogor (IPB), didirikan dengan semangat untuk menghadirkan gaya hidup sehat dan berkelanjutan melalui produk-produk pertanian alami. Kami percaya bahwa alam adalah sumber kehidupan terbaik—dan dari sanalah kami memulai perjalanan ini.
                     </p>
                 </div>
                 <div class="relative">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="order-1 md:order-2 space-y-6">
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        Setiap proses di Sadiva Farm dilakukan dengan pendekatan organik, tanpa menggunakan pestisida berbahaya, dan selalu mengutamakan praktik ramah lingkungan. Kami menjaga kesegaran dan kualitas hasil tani agar sampai ke tangan konsumen dalam kondisi terbaik—alami, sehat, dan penuh kebaikan dari tanah.
+                        Setiap proses di Sadifa Farm dilakukan dengan pendekatan organik, tanpa menggunakan pestisida berbahaya, dan selalu mengutamakan praktik ramah lingkungan. Kami menjaga kesegaran dan kualitas hasil tani agar sampai ke tangan konsumen dalam kondisi terbaik—alami, sehat, dan penuh kebaikan dari tanah.
                     </p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        Namun Sadiva Farm bukan sekadar tempat bertani. Kami hadir untuk membangun komunitas, menjalin hubungan yang kuat antara petani, konsumen, dan lingkungan. Melalui kolaborasi, edukasi, dan partisipasi aktif, kami ingin menghidupkan ekosistem pertanian yang saling mendukung dan berkelanjutan—dimulai dari kebun kami di IPB, untuk masa depan yang lebih hijau dan sehat bagi semua.
+                        Namun Sadifa Farm bukan sekadar tempat bertani. Kami hadir untuk membangun komunitas, menjalin hubungan yang kuat antara petani, konsumen, dan lingkungan. Melalui kolaborasi, edukasi, dan partisipasi aktif, kami ingin menghidupkan ekosistem pertanian yang saling mendukung dan berkelanjutan—dimulai dari kebun kami di IPB, untuk masa depan yang lebih hijau dan sehat bagi semua.
                     </p>
                 </div>
                 <div class="relative">
@@ -154,27 +154,27 @@
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Bergabunglah Bersama Kami</h2>
                 <p class="text-xl text-green-100 leading-relaxed mb-8">
-                    Kami terbuka untuk kerja sama, edukasi, maupun kunjungan. Sadiva Farm bukan sekadar tempat menanam, tapi juga tempat tumbuh—untuk semua yang mencintai alam dan masa depan yang lebih hijau.
+                    Kami terbuka untuk kerja sama, edukasi, maupun kunjungan. Sadifa Farm bukan sekadar tempat menanam, tapi juga tempat tumbuh—untuk semua yang mencintai alam dan masa depan yang lebih hijau.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        🌱 Kunjungi Farm Kami
-                    </button>
-                    <button class="bg-green-500 bg-opacity-30 backdrop-blur text-white px-8 py-4 rounded-xl font-semibold hover:bg-opacity-40 transition-all duration-300 border border-green-300 border-opacity-30">
+                    <a href="https://maps.app.goo.gl/KU86oENVCKLKDXWX6" target="_blank" rel="noopener" class="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        🌱 Kunjungi Kami
+                    </a>
+                    <a href="https://wa.me/628123456789" target="_blank" rel="noopener" class="bg-green-500 bg-opacity-30 backdrop-blur text-white px-8 py-4 rounded-xl font-semibold hover:bg-opacity-40 transition-all duration-300 border border-green-300 border-opacity-30">
                         📞 Hubungi Kami
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Floating Elements -->
+{{-- <!-- Floating Elements -->
 <div class="fixed bottom-8 right-8 z-50">
     <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-110">
         <span class="text-white text-xl">↑</span>
     </div>
-</div>
+</div> --}}
 
 @endsection
 

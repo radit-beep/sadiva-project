@@ -15,7 +15,7 @@
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center text-white px-4">
                     <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl animate-fade-in">
-                        Sadiva Farm
+                        Sadifa Farm
                     </h1>
                     <p class="text-xl md:text-2xl font-light drop-shadow-lg animate-fade-in-delay">
                         Pertanian Organik Berkelanjutan
@@ -26,11 +26,11 @@
     </section>
 
     <!-- Welcome Section -->
-    <section class="py-[4rem] px-[1.5rem] md:px-[4rem] bg-gradient-to-br from-green-50 to-emerald-50">
+    <section class="py-[4rem] px-[1.5rem] md:px-[4rem] bg-white">
         <div class="max-w-5xl mx-auto text-center">
             <div class="mb-8">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-                    Selamat Datang di <span class="text-green-600">Sadiva Farm</span>
+                    Selamat Datang di <span class="text-green-600">Sadifa Farm</span>
                 </h2>
                 <div class="w-32 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto rounded-full mb-6"></div>
                 <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
