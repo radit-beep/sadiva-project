@@ -109,7 +109,7 @@
                             <span class="text-2xl font-bold text-emerald-600 group-hover:text-emerald-700 transition-colors duration-300">
                                 Rp{{ number_format($product->price, 0, ',', '.') }}
                             </span>
-                            <span class="text-xs text-gray-500">per unit</span>
+                            <span class="text-xs text-gray-500">per kilogram</span>
                         </div>
                         <div class="flex items-center space-x-1">
                             <div class="w-2 h-2 bg-green-500 rounded-full"></div>

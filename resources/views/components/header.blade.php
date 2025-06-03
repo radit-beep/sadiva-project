@@ -3,8 +3,7 @@
         <!-- Desktop Layout -->
         <div class="hidden md:flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-black rounded-full"></div>
-                <span class="text-lg font-medium text-black">Logo</span>
+                <span class="text-lg font-medium text-black">Sadifa</span>
             </div>
 
             <nav class="flex gap-10 text-gray-500 text-md">

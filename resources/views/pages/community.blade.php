@@ -24,7 +24,6 @@
             @endif
         </div>
         
-        <!-- Decorative elements -->
         <div class="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-10 rounded-full blur-xl"></div>
         <div class="absolute bottom-10 right-10 w-32 h-32 bg-yellow-300 bg-opacity-20 rounded-full blur-2xl"></div>
     </div>

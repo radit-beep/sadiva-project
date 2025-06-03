@@ -40,7 +40,7 @@
             <!-- Quick Links -->
             <div class="text-center md:text-left">
                 <h3 class="font-bold text-xl mb-6 relative">
-                    <span class="bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Quick Links</span>
+                    <span class="bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Halaman</span>
                     <div class="absolute -bottom-2 left-0 md:left-0 right-0 md:right-auto w-16 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto md:mx-0"></div>
                 </h3>
                 <ul class="space-y-3">
