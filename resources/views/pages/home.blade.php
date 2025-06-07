@@ -3,29 +3,76 @@
 @section('title', 'Home')
 
 @section('content')
-    <!-- Banner Gambar Lebar Penuh dengan Overlay -->
     <section class="w-screen relative left-1/2 right-1/2 -mx-[50vw]">
-        <div class="relative">
-            <img src="{{ asset('images/sadifa farm.jpg') }}" alt="Banner Image" class="w-full h-auto object-cover">
-            
-            <!-- Dark Overlay untuk readability -->
-            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-            
-            <!-- Text Overlay -->
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white px-4">
-                    <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl animate-fade-in">
-                        Sadifa Farm
-                    </h1>
-                    <p class="text-xl md:text-2xl font-light drop-shadow-lg animate-fade-in-delay">
-                        Pertanian Organik Berkelanjutan
-                    </p>
+        <div class="relative overflow-hidden">
+            <!-- Carousel Container -->
+            <div id="carousel" class="flex transition-transform duration-[1200ms] [transition-timing-function:cubic-bezier(0.25,0.1,0.25,1)] [will-change:transform]">
+                <div class="min-w-full relative">
+                    <img src="{{ asset('images/sadifa farm.jpg') }}" alt="Sadifa Farm 1" class="w-full h-[70vh] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl animate-fade-in">
+                                Sadifa Farm
+                            </h1>
+                            <p class="text-xl md:text-2xl font-light drop-shadow-lg animate-fade-in-delay">
+                                Pertanian Organik Berkelanjutan
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="min-w-full relative">
+                    <img src="{{ asset('images/joki.jpg') }}" alt="Joki" class="w-full h-[70vh] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl animate-fade-in">
+                                Produk Organik
+                            </h1>
+                            <p class="text-xl md:text-2xl font-light drop-shadow-lg animate-fade-in-delay">
+                                100% Alami & Sehat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-full relative">
+                    <img src="{{ asset('images/konsultasi.jpg') }}" alt="Konsultasi" class="w-full h-[70vh] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-2xl animate-fade-in">
+                                Pertanian Masa Depan
+                            </h1>
+                            <p class="text-xl md:text-2xl font-light drop-shadow-lg animate-fade-in-delay">
+                                Teknologi & Tradisi Berpadu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            
+            <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300 backdrop-blur-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" data-slide="0"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" data-slide="1"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" data-slide="2"></button>
             </div>
         </div>
     </section>
 
-    <!-- Welcome Section -->
     <section class="py-[4rem] px-[1.5rem] md:px-[4rem] bg-gradient-to-br from-green-50 to-emerald-50">
         <div class="max-w-5xl mx-auto text-center">
             <div class="mb-8">
@@ -40,7 +87,6 @@
                 </p>
             </div>
             
-            <!-- Highlight Cards -->
             <div class="grid md:grid-cols-3 gap-6 mt-12">
                 <div class="bg-white p-6 rounded-2xl shadow-lg border border-green-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -69,7 +115,6 @@
         </div>
     </section>
 
-    <!-- Jasa yang Ditawarkan -->
     <section class="py-[3rem] px-[1.5rem] md:px-[4rem] bg-white">
         <div class="max-w-6xl mx-auto text-center mb-[2rem]">
             <h2 class="text-[2rem] font-bold mb-[1rem]">Jasa yang Ditawarkan</h2>
@@ -79,7 +124,6 @@
         </div>
 
         <div class="max-w-6xl mx-auto grid gap-6 md:grid-cols-3">
-            <!-- Card 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="{{ asset('images/konsultasi.jpg') }}" alt="Konsultasi" class="w-full h-48 object-cover">
                 <div class="p-4">
@@ -88,7 +132,6 @@
                 </div>
             </div>
 
-            <!-- Card 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="{{ asset('images/pelatihan.jpg') }}" alt="Pelatihan" class="w-full h-48 object-cover">
                 <div class="p-4">
@@ -97,7 +140,6 @@
                 </div>
             </div>
 
-            <!-- Card 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img src="{{ asset('images/joki.jpg') }}" alt="Pengelolaan Kebun Organik" class="w-full h-48 object-cover">
                 <div class="p-4">
@@ -108,7 +150,6 @@
         </div>
     </section>
 
-    <!-- Review dari Pelanggan -->
     <section class="py-[3rem] px-[1.5rem] md:px-[4rem] bg-gray-50">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-[2rem] font-bold mb-[2rem] text-center">Review Pelanggan</h2>
@@ -171,5 +212,59 @@
     .animate-fade-in-delay {
         animation: fade-in-delay 1s ease-out 0.5s both;
     }
+
+    .carousel-dot.active {
+        background-color: white !important;
+        opacity: 1 !important;
+    }
 </style>
+@endpush
+
+@push('scripts')
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dots = document.querySelectorAll('.carousel-dot');
+    
+    let currentSlide = 0;
+    const totalSlides = 3;
+    
+    function updateCarousel() {
+        const translateX = -currentSlide * 100;
+        carousel.style.transform = `translateX(${translateX}%)`;
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+    }
+    
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+    
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+        updateCarousel();
+    }
+    
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => goToSlide(index));
+    });
+    
+    setInterval(nextSlide, 5000);
+    
+    updateCarousel();
+});
+</script>
 @endpush
