@@ -1,5 +1,4 @@
 <footer class="bg-gradient-to-br from-green-800 via-green-700 to-green-900 text-white relative overflow-hidden">
-    <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
         <div class="absolute top-0 left-0 w-72 h-72 bg-green-200 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/3 translate-y-1/3"></div>
@@ -7,10 +6,8 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
-        <!-- Main Content Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             
-            <!-- Brand Section -->
             <div class="lg:col-span-1 text-center md:text-left">
                 <div class="flex items-center gap-3 justify-center md:justify-start mb-6">
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
@@ -37,7 +34,6 @@
                 </div>
             </div>
 
-            <!-- Quick Links -->
             <div class="text-center md:text-left">
                 <h3 class="font-bold text-xl mb-6 relative">
                     <span class="bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Halaman</span>
@@ -63,7 +59,6 @@
                 </ul>
             </div>
 
-            <!-- Contact Info -->
             <div class="text-center md:text-left">
                 <h3 class="font-bold text-xl mb-6 relative">
                     <span class="bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Kontak Kami</span>
@@ -85,7 +80,6 @@
                 </div>
             </div>
 
-            <!-- Location -->
             <div class="text-center md:text-left">
                 <h3 class="font-bold text-xl mb-6 relative">
                     <span class="bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">Lokasi Kami</span>
@@ -101,27 +95,6 @@
                             <p>Kampus IPB Dramaga Bogor</p>
                             <p>16680 West Java, Indonesia</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Newsletter Section -->
-        <div class="mt-16 mb-12">
-            <div class="bg-gradient-to-r from-green-600/20 to-emerald-600/20 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <div class="text-center">
-                    <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-green-300 to-emerald-300 bg-clip-text text-transparent">
-                        Subscribe Newsletter
-                    </h3>
-                    <p class="text-green-100 mb-6 max-w-2xl mx-auto">
-                        Dapatkan update terbaru tentang program pertanian, tips berkebun, dan informasi menarik lainnya langsung ke email Anda.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                        <input type="email" placeholder="Masukkan email Anda" 
-                               class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-green-200 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent backdrop-blur-sm">
-                        <button class="px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-green-500/25">
-                            Subscribe
-                        </button>
                     </div>
                 </div>
             </div>
