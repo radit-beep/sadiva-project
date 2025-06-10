@@ -29,7 +29,6 @@
     </div>
 
     @if ($communities->count())
-        <!-- Stats Section -->
         <div class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8 mb-12 border border-gray-200">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="flex items-center space-x-4 mb-4 md:mb-0">
@@ -51,11 +50,9 @@
         </div>
     @endif
 
-    <!-- Communities Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         @forelse ($communities as $community)
             <div class="group bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2">
-                <!-- Image Container -->
                 <div class="relative overflow-hidden">
                     @if($community->image_url)
                         <img src="{{ asset('storage/' . $community->image_url) }}" 
@@ -70,13 +67,11 @@
                         </div>
                     @endif
                     
-                    <!-- Overlay Badge -->
                     <div class="absolute top-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-full px-3 py-1 transform translate-x-full group-hover:translate-x-0 transition-transform duration-500">
                         <span class="text-xs font-semibold text-green-700">Mitra</span>
                     </div>
                 </div>
 
-                <!-- Content -->
                 <div class="p-6">
                     <h2 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-700 transition-colors duration-300 line-clamp-2">
                         {{ $community->title }}
@@ -85,7 +80,6 @@
                         {{ Str::limit($community->description, 100) }}
                     </p>
                     
-                    <!-- Action Area -->
                     <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                         <div class="flex items-center space-x-2">
                             <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
@@ -99,7 +93,6 @@
                 </div>
             </div>
         @empty
-            <!-- Empty State -->
             <div class="col-span-full flex flex-col items-center justify-center py-20">
                 <div class="w-32 h-32 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-8">
                     <svg class="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +111,6 @@
     </div>
 
     @if ($communities->count())
-        <!-- Call to Action -->
         <div class="mt-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-8 text-center text-white">
             <h3 class="text-2xl font-bold mb-4">Tertarik Bergabung?</h3>
             <p class="text-green-100 mb-6 max-w-2xl mx-auto">

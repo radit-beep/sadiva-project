@@ -154,7 +154,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <button class="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-8 py-3 rounded-full font-semibold hover:from-emerald-700 hover:to-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Notify Saya
+                        Beritahu Saya
                     </button>
                     <button class="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-full font-semibold hover:bg-emerald-50 transition-all duration-300">
                         Hubungi Kami
