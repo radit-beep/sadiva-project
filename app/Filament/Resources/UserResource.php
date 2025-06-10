@@ -57,6 +57,7 @@ public static function table(Table $table): Table
         ->columns([
             Tables\Columns\TextColumn::make('name')->label('Nama')->sortable()->searchable(),
             Tables\Columns\TextColumn::make('email')->label('Email')->sortable()->searchable(),
+            Tables\Columns\TextColumn::make('password')->label('Password')->sortable()->searchable(),
             Tables\Columns\TextColumn::make('date_of_birth')->label('Tanggal Lahir')->date(),
         ])
         ->filters([])
